@@ -60,6 +60,13 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    configurations.all {
+    resolutionStrategy {
+      force 'org.xwalk:xwalk_core_library:23.53.589.4'
+    }
+  }
+
 }
 
 flutter {

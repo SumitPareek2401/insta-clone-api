@@ -1,21 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:sync_ventures_ig_api/ig_api_user.dart';
+import 'package:sync_ventures_ig_api/new_ig_api.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      
-      home: InstagramScreen(),
+      title: 'Facebook Graph API Demo',
+      home: InstagramScreennew(),
     );
   }
 }
-
